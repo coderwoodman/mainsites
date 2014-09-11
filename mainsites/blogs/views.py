@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def current_url(request):
+    return HttpResponse("the url is %s" % request.get_host())

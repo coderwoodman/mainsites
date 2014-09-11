@@ -1,7 +1,7 @@
 from django.db import models
 
 class Blog(models.Model):
-    blogid = models.IntegerField(**null=True**)
+    blogid = models.IntegerField()
     blogtitle = models.CharField(max_length=20)
     author = models.CharField(max_length=20)
     blogcontent = models.TextField()
