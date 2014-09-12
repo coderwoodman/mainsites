@@ -3,7 +3,10 @@
 {% block title %}开心生活每一天 -- junekzhang{% endblock %}
 
 {% block content %}
-<h1>blogList:{{ blogname1}}</h1>
+{% for blog in bloglist %}
+<h1>{{ blog.blogtitle }}</h1>
+<h4>{{ blog.blogcontent }}</h4>
+{% endfor %}
 {% endblock %}
 
 

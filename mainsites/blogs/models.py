@@ -1,10 +1,9 @@
 from django.db import models
 
 class Blog(models.Model):
-    blogid = models.IntegerField()
     blogtitle = models.CharField(max_length=20)
     author = models.CharField(max_length=20)
-    blogcontent = models.TextField()
+    blogcontent = models.CharField(max_length=8000)
     blogdesc = models.CharField(max_length=256)
     createtime = models.DateTimeField(auto_now_add=True)
     lastchagetime = models.DateTimeField(auto_now=True)

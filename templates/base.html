@@ -4,47 +4,37 @@
     <meta http-equiv="Content-Language" content="en-us" />
     <title>{% block title %}{% endblock %}</title>
     <meta name="description" content="junkezhang coderwood" />
-    <link href="/static/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body id="bodyCotainer">
 
-<div class="h_bg">
-    <div class="wrap">
-        <div class="header">
-            <div class="logo">
-                <h1><a href="index.html"></a></h1>
-            </div>
-            <div class="h_txt">
-                <h2>开心生活每一天</h2>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#">主页</a></li>
+			<li><a href="#">博客</a></li>
+			<li><a href="/about">关于</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
 </div>
-
-<div class="nav_bg">
-    <div class="wrap">
-            <ul class="nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <div class="clear"></div>
-            </ul>
-            <div class="clear"></div>
-    </div>
-</div>
-
-<div class="main_bg">
-{% block content %}{% endblock %}
-</div>
-
-<div class="ftr-bg">
-	<div class="wrap">
-		<div class="copy">
-			<p class="w3-link">Copyright &copy; 2014. jilidou.com All rights reserved.
-                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253221326'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1253221326%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-            </p>
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">开心生活每一天</h1>
 		</div>
 	</div>
+</div>
+
+<div id="wrapper">
+{% block content %}{% endblock %}
+</div>
+<!-- end #page -->
+
+<div id="footer" class="footer">
+			<p>Copyright &copy; 2014. jilidou.com All rights reserved.
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253221326'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1253221326%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+            </p>
 </div>
 
 </body>
