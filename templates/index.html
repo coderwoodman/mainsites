@@ -8,23 +8,6 @@
 		<div id="page-bgtop">
 			<div id="page-bgbtm">
 				<div id="content">
-					<div class="post post-alt">
-						<h2 class="title"><a href="#">个人站点终于架起来了</a></h2>
-                        <p class="meta"><span class="date">2014年09月08日</span><span class="posted">作者 <a href="#">张俊克</a></span></p>
-						<div style="clear: both;">&nbsp;</div>
-						<div class="entry">
-                            <p>通过若干天的奋斗，个人站点终于架起来了。<br/>站点部署在阿里云上，租的ubuntu64位服务器，web服务器用的apache，编程语言用的python，使用了django框架。</p>
-						</div>
-					</div>
-					<div class="post">
-						<h2 class="title"><a href="#">个人站点终于架起来了 </a></h2>
-                        <p class="meta"><span class="date">2014年09月08日</span><span class="posted">作者 <a href="#">张俊克</a></span></p>
-						<div style="clear: both;">&nbsp;</div>
-						<div class="entry">
-							<p>通过若干天的奋斗，个人站点终于架起来了。<br/>站点部署在阿里云上，租的ubuntu64位服务器，web服务器用的apache，编程语言用的python，使用了django框架。</p>
-							<p class="links"><a href="#" class="button">阅读更多</a></p>
-						</div>
-					</div>
                     {% for blog in bloglist %}
 					<div class="post">
 						<h2 class="title"><a href="#">{{ blog.blogtitle }}</a></h2>
@@ -78,4 +61,3 @@
 	</div>
 	
 {% endblock %}
-
